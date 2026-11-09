@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f4eb">
+  <title>EMI Calculator | Tool Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Sans+Telugu:wght@400;600&family=Noto+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-tool="emi-calculator">
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TH</span><span>Tool Hub</span></a>
+      <label class="visually-hidden" for="lang" data-i18n="language"></label>
+      <select class="language" id="lang"><option value="en">English</option><option value="hi">हिंदी</option><option value="te">తెలుగు</option><option value="ur">اردو</option></select>
+    </header>
+    <main class="page-main">
+      <a class="back-link" href="index.html" data-i18n="back"></a>
+      <section class="page-heading"><p class="eyebrow" data-i18n="emiEyebrow"></p><h1 data-i18n="emi"></h1></section>
+      <form class="tool-panel" id="emi-form">
+        <label for="loan-amount" data-i18n="amount"></label>
+        <input type="number" id="loan-amount" value="500000" min="1" step="1" inputmode="decimal" required>
+        <label for="interest-rate" data-i18n="rate"></label>
+        <input type="number" id="interest-rate" value="9" min="0" max="100" step="0.1" inputmode="decimal" required>
+        <label for="loan-years" data-i18n="years"></label>
+        <input type="number" id="loan-years" value="5" min="1" max="100" step="1" inputmode="numeric" required>
+        <button class="tool-button" type="submit" data-i18n="calculate"></button>
+        <p class="tool-result" id="emi-result" data-clear-result role="status" aria-live="polite"></p>
+      </form>
+    </main>
+    <footer><span>Tool Hub</span><span data-i18n="footer"></span></footer>
+  </div>
+  <script src="app.js" defer></script>
+</body>
+</html>

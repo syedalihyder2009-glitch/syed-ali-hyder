@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f4eb">
+  <meta name="description" content="Free browser-based utilities from Tool Hub.">
+  <title>Online Tool | Tool Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">TH</span><span>Tool Hub</span></a>
+      <span class="availability">20 free tools</span>
+    </header>
+    <main class="page-main">
+      <a class="back-link" href="index.html">← All tools</a>
+      <section class="page-heading"><p class="eyebrow">Everyday utility</p><h1 id="tool-title">Tool</h1></section>
+      <section class="tool-panel" id="tool-panel" aria-live="polite"></section>
+    </main>
+    <footer><span>Tool Hub</span><span>Free tools that work in your browser.</span></footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js" defer></script>
+  <script src="tools.js" defer></script>
+</body>
+</html>
