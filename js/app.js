@@ -5,7 +5,7 @@
   /* ===== EDIT THESE TWO LINES BEFORE YOU PUBLISH ===== */
   const CONFIG = {
     siteName: 'ToolHub',
-    contactEmail: 'hello@yourdomain.com'   // <- put your real email here
+    contactEmail: 'bunnytheeagle042@gmail.com'
   };
 
   const body = document.body;
