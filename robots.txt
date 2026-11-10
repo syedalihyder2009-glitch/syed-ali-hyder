@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://syedalihyder2009-glitch.github.io/syed-ali-hyder/sitemap.xml
